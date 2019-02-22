@@ -32,8 +32,6 @@ $row = $user->get_user($login_id);
 
       <div id="logo" class="pull-left">
         <h1><a href="home.php" class="scrollto">Coursemach</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
 
       <nav id="nav-menu-container">
@@ -41,7 +39,6 @@ $row = $user->get_user($login_id);
           <li class="menu-active"><a href="home.php">Home</a></li>
           <li><a href="#about">Profile</a></li>
           <li><a href="#more-features">My Course</a></li>
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -56,7 +53,7 @@ $row = $user->get_user($login_id);
       <div class="section-header">
         <h3 class="section-title">Profile</h3>
         <span class="section-divider"></span>
-      <form action="" method="post" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data">
       </div>
       <div class="row">
         <div class="col-lg-6 edit-img wow fadeInLeft">
@@ -70,7 +67,9 @@ $row = $user->get_user($login_id);
         </div>
 
         <div class="col-lg-6 content wow fadeInRight">
-          <h2>Namie Amuro<?php echo $row['user_name']; ?></h2>
+          <h2>Namie Amuro
+            <?php echo $row['user_name']; ?>
+          </h2>
           <p>
             Grades: <input class="sm" type="text" placeholder="Grades" required="required" name="user_grade" value="<?php echo $row['user_grade'] ?>">
           </p>
@@ -92,7 +91,7 @@ $row = $user->get_user($login_id);
           <textarea class="" placeholder="Self-introduction" required="required" name="user_intro" id="" cols="20" rows="5"><?php echo $row['user_intro'] ?></textarea>
         </div>
       </div>
-    </form>
+      </form>
     </div>
   </section><!-- #about -->
 
@@ -108,21 +107,14 @@ $row = $user->get_user($login_id);
                 $target_dir = "images/";
                 $target_file = basename($_FILES['profilepic']['name']);
                 $tmp_name = $_FILES['profilepic']['tmp_name'];
-
                 // $image_name = $_FILES['image']['name'] ;
                 // $target_file = "../uploads/$image_name";
                 // $targetFileForItem = "uploads/$image_name";
-
-                // move_uploaded_file($_FILES['image']['tmp_name'], $target_file);
                 move_uploaded_file($tmp_name, "$target_dir/$target_file");
-
                 // echo $target_dir;
                 // echo $target_file;
                 // $user_pic = $target_dir.$target_file;
                 // echo $user_pic;
-
-
-                
                 $user = new User;
                 echo $user->update($user_grade, $user_major, $user_blood, $user_height, $user_hobby, $user_intro, $target_dir, $target_file, $tmp_name, $login_id);
 

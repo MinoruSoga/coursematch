@@ -9,11 +9,7 @@ $course = new Course;
 $course_id = $_GET['id'];
 $row = $user->get_user_id($login_id);
 $user_id = $row['user_id'];
-
 $course->insert_user_course($user_id, $course_id);
-
-// $course->insert_course($user_id, $course_id);
-
 
 
 

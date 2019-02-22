@@ -65,63 +65,31 @@ $user_course_id = $row['user_course_id'];
             doloremque</p>
         </div>
       </div>
-      
+
       <div class="addform justify-content-center">
         <div class="card">
           <form action="time.php?id=<?php echo $course_id ?>" method="post">
-          <div class="card-body">
-          <h1 class="card-title text-center">Choose Day</h1>
-            <div class="cp_ipcheck">
-              <ul class="mb-0">
-              <?php
-                $sched = $user->get_sched();
-                foreach($sched as $day){
-                  $schedule = $day['day'];
-                  $day_id = $day['day_id'];
-                  // echo "<div>";
-                  echo "<li class='list_item'>";
-                  echo "<label><input type='checkbox' class='option-input05' name='day[]' value='$day_id'>$schedule</label>";
-                //   echo "<div class='cp_ipselect cp_sl01'>
-                //   <select name='time[]' id=''>
-                //   <option hidden>Choose</option>
-                //     <option value='1'>1</option>
-                //     <option>2</option>
-                //     <option>3</option>
-                //     <option>4</option>
-                //     <option>5</option>
-                //     <option>6</option>
-                //     <option>7</option>
-                //   </select>
-                // </div>";
-                  echo "</li>";
-                  // echo "</div>";
-                }
-              ?>
-              </ul>
+            <div class="card-body">
+              <h1 class="card-title text-center">Choose Day</h1>
+              <div class="cp_ipcheck">
+                <ul class="mb-0">
+                  <?php
+                  $sched = $user->get_sched();
+                  foreach($sched as $day){
+                    $schedule = $day['day'];
+                    $day_id = $day['day_id'];
+                    echo "<li class='list_item'>";
+                    echo "<label><input type='checkbox' class='option-input05' name='day[]' value='$day_id'>$schedule</label>";
+                    echo "</li>";
+                  }
+                  ?>
+                </ul>
+              </div>
+
+              <p class="footer" id="cardfooter">
+                <button type="submit" name="next" class="card-link1 btn" id="button">NEXT</button>
+              </p>
             </div>
-            
-            <p class="footer" id="cardfooter">
-              <!-- <a href="courselist.php" class="card-link">BACK</a> -->
-              <button type="submit" name="next" class="card-link1 btn" id="button">NEXT</button>
-            </p>
-
-            <?php
-              // if(isset($_POST['submit'])){
-
-              // $days = $_POST['day'];
-              // $time = $_POST['time'];
-              // header("Location: time.php?id=$course_id");
-              // var_dump($days);
-              // echo "<br>";
-              // var_dump($time);
-              
-              // $course->add_day($days ,$user_id, $course_id);
-                
-              // }
-
-              ?>
-
-          </div>
           </form>
         </div>
       </div>
@@ -131,5 +99,3 @@ $user_course_id = $row['user_course_id'];
 </body>
 
 </html>
-
-<!-- class="card-link1 btn" id="button" -->

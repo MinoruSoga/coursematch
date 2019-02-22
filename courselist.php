@@ -25,14 +25,12 @@ echo $user_course_course_id;
 
 <body>
   <!-- css -->
-<link href="css/style.css" rel="stylesheet">
-<header id="header" class="bg">
+  <link href="css/style.css" rel="stylesheet">
+  <header id="header" class="bg">
     <div class="container">
 
       <div id="logo" class="pull-left">
         <h1><a href="home.php" class="scrollto">Coursemach</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
 
       <nav id="nav-menu-container">
@@ -40,26 +38,18 @@ echo $user_course_course_id;
           <li class="menu-active"><a href="home.php">Home</a></li>
           <li><a href="home.php#about">Profile</a></li>
           <li><a href="home.php#my-course">My Course</a></li>
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header>
-</head>
+  </head>
 
   <main id="main">
 
     <!--==========================
       More Features Section
     ============================-->
-    <?php
-    // $user_id = $userinfo['user_id'];
-    // $result = $course->get_user_course($user_id);
-    // foreach($result as $row){
-    //   $row['course_name'];
-    // }
-  ?>
     <section id="my-course" class="section-bg mt-5">
       <div class="container">
 
@@ -68,16 +58,15 @@ echo $user_course_course_id;
           <span class="section-divider"></span>
           <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque</p>
-            <div class="b-search w3-form">
-					<form action="choosecourse.php" method="post">
-						<input type="text" name="coursepart" Placeholder="Enter your keywords here..." required="">
-						<input type="submit" name="search" value="">
-          </form>
-				</div>
+          <div class="b-search w3-form">
+            <form action="choosecourse.php" method="post">
+              <input type="text" name="coursepart" Placeholder="Enter your keywords here..." required="">
+              <input type="submit" name="search" value="">
+            </form>
+          </div>
         </div>
         <div class="row">
           <?php
-            // $user_id = $userinfo['user_id'];
             $result = $course->get_course_not_enrol($user_id);
             foreach($result as $row){
               $course_id = $row['course_id'];
@@ -91,34 +80,6 @@ echo $user_course_course_id;
               echo "</div>";
             }
           ?>
-          <div class="col-lg-4">
-            <div class="box wow fadeInLeft">
-              <h4 class=""><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                occaecati cupiditate non provident etiro rabeta lingo.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="box wow fadeInLeft">
-              <h4 class=""><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                occaecati cupiditate non provident etiro rabeta lingo.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="box wow fadeInLeft">
-              <h4 class=""><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                occaecati cupiditate non provident etiro rabeta lingo.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="box wow fadeInLeft">
-              <h4 class=""><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                occaecati cupiditate non provident etiro rabeta lingo.</p>
-            </div>
-          </div>
         </div>
       </div>
       <h3 class="addc"><a href="createcourse.php">Add Course</a></h3>

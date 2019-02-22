@@ -30,8 +30,6 @@ $user_id = $row['user_id'];
 
       <div id="logo" class="pull-left">
         <h1><a href="home.php" class="scrollto">Coursematch</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
 
       <nav id="nav-menu-container">
@@ -39,7 +37,6 @@ $user_id = $row['user_id'];
           <li class="menu-active"><a href="home.php">Home</a></li>
           <li><a href="home.php#about">Profile</a></li>
           <li><a href="home.php#more-features">My Course</a></li>
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -57,28 +54,26 @@ $user_id = $row['user_id'];
 
         <div class="section-header">
           <h3 class="section-title">Couse Information</h3>
-          <?php
-          // echo $user_id;
-          // echo $course_id;
-          // echo $day_id;
-          // echo $time;
 
+          <?php
            $total = $course->get_total_course_id($user_id, $course_id, $day_id,$time);
            $total_id = $total['total_id'];
           ?>
-          
+
           <span class="section-divider"></span>
           <div class="unenroll mb-4">
-          <a href="unenroll.php?total_id=<?php echo $total_id ?>" class="btn-square-emboss text-center w-25">unenroll</a>
+            <a href="unenroll.php?total_id=<?php echo $total_id ?>" class="btn-square-emboss text-center w-25">unenroll</a>
           </div>
         </div>
         <div class="courseinfo">
+
           <?php
           $course_info = $course->get_courseinfo($course_id, $day_id);
           echo "<h2>".$course_info['course_name']."</h2>";
           echo "<h3>".$course_info['course_description']."</h3>";
           echo "<h3>".$course_info['day']." : ".$time."</h3>";
           ?>
+
         </div>
       </div>
       </div>
@@ -109,7 +104,6 @@ $user_id = $row['user_id'];
           ?>
         </div>
       </div>
-      <!-- <h3 class="addc"><a href="addcourse.php">Add Course</a></h3> -->
       </div>
     </section><!-- #more-features -->
   </main>

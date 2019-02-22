@@ -24,8 +24,6 @@
   <div class="container">
     <div id="logo" class="pull-left">
       <h1><a href="#intro" class="scrollto">Coursematch</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
     </div>
 
     <nav id="nav-menu-container">
@@ -33,7 +31,6 @@
         <li class="menu-active"><a href="#intro">Home</a></li>
         <li><a href="home.php#profile">Profile</a></li>
         <li><a href="home.php#my-course">My Course</a></li>
-        <!-- <li><a href="#contact">Contact Us</a></li> -->
         <li><a href="logout.php">Logout</a></li>
       </ul>
     </nav><!-- #nav-menu-container -->

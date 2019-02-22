@@ -19,7 +19,9 @@ a {
   transition: 0.5s;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #1dc9ce;
   outline: none;
   text-decoration: none;
@@ -30,7 +32,12 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -92,7 +99,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
+#header #logo h1 a,
+#header #logo h1 a:hover {
   color: #fff;
 }
 
@@ -106,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
     margin-top: 0;
   }
+
   #header #logo img {
     max-height: 40px;
   }
@@ -117,7 +126,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 72px;
   transition: all 0.5s;
 }
-#header.bg{
+
+#header.bg {
   background: linear-gradient(45deg, #1de099, #1dc8cd);
   padding: 24px 0;
   height: 72px;
@@ -247,7 +257,9 @@ h1, h2, h3, h4, h5, h6 {
     position: static;
     padding-top: 30px;
   }
-  #intro .product-screens .product-screen-2, #intro .product-screens .product-screen-3 {
+
+  #intro .product-screens .product-screen-2,
+  #intro .product-screens .product-screen-3 {
     display: none;
   }
 }
@@ -256,7 +268,8 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -275,12 +288,12 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -335,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
 }
 
@@ -359,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   color: #1dc8cd;
 }
 
@@ -526,8 +539,8 @@ Profilestudent
   overflow: hidden
 }
 
-#student .row{
-  margin-top:50px;
+#student .row {
+  margin-top: 50px;
 }
 
 #student .student-img img {
@@ -539,12 +552,14 @@ Profilestudent
   #student .student-img {
     height: auto;
   }
+
   #student .student-img img {
     margin-left: 0;
     padding-bottom: 30px;
   }
 }
-#student button{
+
+#student button {
   background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
   width: 100px;
   outline: none;
@@ -554,10 +569,10 @@ Profilestudent
   /* display: block; */
   border-radius: 3em;
   padding: 10px 10px;
-  margin-left:40%;
-  color:white;
-  
-  
+  margin-left: 40%;
+  color: white;
+
+
 }
 
 #student .content .h2 {
@@ -576,7 +591,7 @@ Profilestudent
 
 #student .content p {
   line-height: 26px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
@@ -584,7 +599,7 @@ Profilestudent
   margin-bottom: 0;
 }
 
-#student .sm{
+#student .sm {
   width: 100px;
   outline: none;
   font-size: 18px;
@@ -598,7 +613,8 @@ Profilestudent
 
   font-family: 'Raleway', sans-serif;
 }
-#student .md{
+
+#student .md {
   width: 300px;
   outline: none;
   font-size: 18px;
@@ -613,7 +629,7 @@ Profilestudent
   font-family: 'Raleway', sans-serif;
 }
 
-#student .photo{
+#student .photo {
   width: 500px;
   outline: none;
   font-size: 18px;
@@ -623,14 +639,15 @@ Profilestudent
   background: none;
   border-radius: 2em;
   padding: 10px 10px;
-  margin-top:10px;
-  margin-left:20px;
+  margin-top: 10px;
+  margin-left: 20px;
 
   font-family: 'Raleway', sans-serif;
 }
-#student h3{
+
+#student h3 {
   /* margin-top:30px; */
-  color:#1dc8cd;
+  color: #1dc8cd;
 }
 
 /* More Features Section
@@ -672,22 +689,21 @@ Profilestudent
   #my-course .box {
     margin-bottom: 20px;
   }
+
   #my-course .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
-  #my-course h4, #my-course p {
+
+  #my-course h4,
+  #my-course p {
     margin-left: 0;
     text-align: center;
   }
 }
-#my-course h3{
+
+#my-course h3 {
   /* margin-top:30px; */
-  color:#1dc8cd;
+  color: #1dc8cd;
 }
-
-
-
-
-

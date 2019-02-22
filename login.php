@@ -3,23 +3,21 @@ require_once 'class/User.php';
 ?>
 <!DOCTYPE html>
 <html>
-	
-	
-	<head>
-			<title>Login</title>
-		
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	
+
+<head>
+	<title>Login</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 	<!-- Meta_tag_Keywords -->
 	<link href="css/login.css" rel="stylesheet" type="text/css" media="all">
 	<!--style_sheet-->
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 	<!--font_awesome_icons-->
-
-
 
 <body>
 	<div class="form">
@@ -59,6 +57,7 @@ require_once 'class/User.php';
 	<!---728x90--->
 
 </body>
+
 </html>
 
 <?php

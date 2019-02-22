@@ -30,14 +30,12 @@ $course = new Course;
   <!-- Main Stylesheet File -->
   <link href="css/table.css" rel="stylesheet">
   <link href="css/student.css" rel="stylesheet">
-  
+
   <header id="header" class="bg">
     <div class="container">
 
       <div id="logo" class="pull-left">
         <h1><a href="home.php" class="scrollto">Coursemach</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
 
       <nav id="nav-menu-container">
@@ -45,7 +43,6 @@ $course = new Course;
           <li class="menu-active"><a href="home.php">Home</a></li>
           <li><a href="home.php#about">Profile</a></li>
           <li><a href="home.php#my-course">My Course</a></li>
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -71,33 +68,22 @@ $course = new Course;
           <h2>
             <?php echo $row['user_name']; ?>
           </h2>
-
-          <p>
-
-            Grades: <p>
-              <?php echo $row['user_grade'] ?>
-            </p>
-
+          <p>Grades:
+            <?php echo $row['user_grade'] ?>
           </p>
-
-          <p>
-            Major:
+          <p>Major:
             <?php echo $row['user_major'] ?>
           </p>
-          <p>
-            Blood type:
+          <p>Blood type:
             <?php echo $row['user_blood'] ?>
           </p>
-          <p>
-            Height:
+          <p>Height:
             <?php echo $row['user_height'] ?>
           </p>
-          <p>
-            Hobby:
+          <p>Hobby:
             <?php echo $row['user_hobby'] ?>
           </p>
-          <p>
-            Self-introduction
+          <p>Self-introduction
           </p>
           <p>
             <?php echo $row['user_intro'] ?>
@@ -133,7 +119,6 @@ $course = new Course;
         ";
         ?>
         <?php
-      // $userID = $userinfo['user_id'];
       $days = $course->get_days();
       
         for($i = 1; $i <= 6; $i++){
@@ -151,17 +136,14 @@ $course = new Course;
               echo "<div class='card'>";
               echo "<div class='card-body'>";
               echo "<h3><a href='courseinfo.php?course_id=$course_id&day_id=$day_id&time=$time'>".$result['course_name']."</a></h3>";
-
               echo "</div>";
               echo "</div>";
-
             echo "</td>";
-
         }
         echo "</tr>";
       }
       ?>
-      <?php
+        <?php
       echo "
       </tbody>
       </table>";

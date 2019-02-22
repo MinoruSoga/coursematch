@@ -1,27 +1,29 @@
+#my-course th {
+  text-align: center;
+}
 
-#my-course th{
-  text-align:center;
+#my-course .card {
+  height: 7vw;
 }
-#my-course .card{
-  height:7vw;
+
+#my-course .card-header {
+  height: 3vw;
 }
-#my-course .card-header{
-  height:3vw;
-}
+
 /* #my-course .td{
   display:table-cell;
   width:25%;
   border:1px solid #ddd;
   list-style:none;
 }  */
-#my-course td{
-  display:table-cell;
-padding:3;
-width:20%;
-color:black;
+#my-course td {
+  display: table-cell;
+  padding: 3;
+  width: 20%;
+  color: black;
 
 }
-#my-course h4>a{
-  color:#666666;
-}
 
+#my-course h4>a {
+  color: #666666;
+}

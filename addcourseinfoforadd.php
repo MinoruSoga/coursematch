@@ -2,24 +2,12 @@
 session_start();
 $login_id = $_SESSION['login_id'];
 $course_id = $_SESSION['globalcourse_id'];
-
-
-
 require_once 'class/User.php';
 require_once 'class/Course.php';
-
 $user = new User;
 $course = new Course;
-
 $row = $user->get_user_id($login_id);
 $user_id = $row['user_id'];
-// $row = $course->get_course_id($user_id);
-// $user_course_course_id = $row['course_id'];
-
-// echo "<h1>".$user_id."   ".$course_id."</h1>";
-
-// $row= $user->get_user_course_id($user_id, $course_id);
-// $user_course_id = $row['user_course_id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,29 +73,13 @@ $user_id = $row['user_id'];
                     echo "</li>";
                     }
                   ?>
-                  
+
                 </ul>
               </div>
               <p class="footer" id="cardfooter">
                 <!-- <a href="courselist.php" class="card-link">BACK</a> -->
                 <button type="submit" name="next" class="card-link1 btn" id="button">NEXT</button>
               </p>
-
-              <?php
-              // if(isset($_POST['submit'])){
-
-              // $days = $_POST['day'];
-              // $course->add_dayforadd($days ,$user_id,$course_id);
-              // if(isset($_POST['submit'])){
-
-              //   $days = $_POST['day'];
-              //   $time = $_POST['time'];
-                // var_dump($days);
-                // echo "<br>";
-                // var_dump($time);
-              // }
-              ?>
-
             </div>
           </form>
         </div>

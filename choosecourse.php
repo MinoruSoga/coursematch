@@ -30,8 +30,6 @@ $user_course_course_id = $row['course_id'];
 
       <div id="logo" class="pull-left">
         <h1><a href="home.php" class="scrollto">Coursemach</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
 
       <nav id="nav-menu-container">
@@ -39,14 +37,12 @@ $user_course_course_id = $row['course_id'];
           <li class="menu-active"><a href="home.php">Home</a></li>
           <li><a href="home.php#about">Profile</a></li>
           <li><a href="home.php#my-course">My Course</a></li>
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
           <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header>
   </head>
-
   <main id="main">
 
     <!--==========================
@@ -80,20 +76,16 @@ $user_course_course_id = $row['course_id'];
 
               if($course_id != $user_course_course_id){
                 echo "<a href='increcourse.php?id=$course_id' class='square_btn'>CHOOSE</a>";
-
               }else{
                 echo "<a class='square_btn disabled'>DONE</a>";
               }
-              
               echo "</div>";
-              
               echo "</div>";
               }
             }
           ?>
         </div>
       </div>
-      <!-- <h3 class="addc"><a href="addcourse.php">Add Course</a></h3> -->
       </div>
     </section><!-- #my-course -->
   </main>

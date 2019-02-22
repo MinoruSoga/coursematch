@@ -19,7 +19,9 @@ a {
   transition: 0.5s;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #1dc9ce;
   outline: none;
   text-decoration: none;
@@ -30,7 +32,12 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -92,7 +99,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
+#header #logo h1 a,
+#header #logo h1 a:hover {
   color: #fff;
 }
 
@@ -106,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
     margin-top: 0;
   }
+
   #header #logo img {
     max-height: 40px;
   }
@@ -117,7 +126,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 72px;
   transition: all 0.5s;
 }
-#header.bg{
+
+#header.bg {
   background: linear-gradient(45deg, #1de099, #1dc8cd);
   padding: 24px 0;
   height: 72px;
@@ -248,7 +258,9 @@ h1, h2, h3, h4, h5, h6 {
     position: static;
     padding-top: 30px;
   }
-  #intro .product-screens .product-screen-2, #intro .product-screens .product-screen-3 {
+
+  #intro .product-screens .product-screen-2,
+  #intro .product-screens .product-screen-3 {
     display: none;
   }
 }
@@ -257,7 +269,8 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -276,12 +289,12 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -336,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
 }
 
@@ -360,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   color: #1dc8cd;
 }
 
@@ -536,6 +549,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #profile .profile-img {
     height: auto;
   }
+
   #profile .profile-img img {
     margin-left: 0;
     padding-bottom: 30px;
@@ -564,11 +578,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-#profile .pedit{
-  text-align:center;
+#profile .pedit {
+  text-align: center;
 }
 
-#profile h3{
+#profile h3 {
   color: #1dc8cd;
 }
 
@@ -611,26 +625,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   #my-course .box {
     margin-bottom: 20px;
   }
+
   #my-course .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
-  #my-course h4, #my-course p {
+
+  #my-course h4,
+  #my-course p {
     margin-left: 0;
     text-align: center;
   }
 }
-#my-course .addc{
-  text-align:center;
+
+#my-course .addc {
+  text-align: center;
   /* margin-top:30px; */
-  margin-bottom:0;
+  margin-bottom: 0;
   color: #1dc8cd;
 }
-#my-course a{
+
+#my-course a {
   color: #1dc8cd;
 }
-#my-course h3{
+
+#my-course h3 {
   color: #1dc8cd;
 }
 
@@ -669,6 +689,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-links a:hover {
   color: #1dc8cd;
 }
+
 /* --------------------------------------------------
 ProfileEdit
 -------------------------------------------------- */
@@ -677,8 +698,8 @@ ProfileEdit
   overflow: hidden
 }
 
-#edit .row{
-  margin-top:50px;
+#edit .row {
+  margin-top: 50px;
 }
 
 #edit .edit-img img {
@@ -690,12 +711,14 @@ ProfileEdit
   #edit .edit-img {
     height: auto;
   }
+
   #edit .edit-img img {
     margin-left: 0;
     padding-bottom: 30px;
   }
 }
-#edit button{
+
+#edit button {
   background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
   width: 100px;
   outline: none;
@@ -705,10 +728,10 @@ ProfileEdit
   /* display: block; */
   border-radius: 3em;
   padding: 10px 10px;
-  margin-left:40%;
-  color:white;
-  
-  
+  margin-left: 40%;
+  color: white;
+
+
 }
 
 #edit .content .h2 {
@@ -727,14 +750,14 @@ ProfileEdit
 
 #edit .content p {
   line-height: 26px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 #edit .content p:last-child {
   margin-bottom: 0;
 }
 
-#edit .sm{
+#edit .sm {
   width: 100px;
   outline: none;
   font-size: 18px;
@@ -748,7 +771,8 @@ ProfileEdit
 
   font-family: 'Raleway', sans-serif;
 }
-#edit .md{
+
+#edit .md {
   width: 300px;
   outline: none;
   font-size: 18px;
@@ -762,7 +786,8 @@ ProfileEdit
 
   font-family: 'Raleway', sans-serif;
 }
-#edit textarea{
+
+#edit textarea {
   width: 500px;
   outline: none;
   font-size: 18px;
@@ -773,11 +798,12 @@ ProfileEdit
   border-radius: 2em;
   padding: 10px 10px;
   margin: 0em 1em;
-  margin-left:0px;
+  margin-left: 0px;
 
   font-family: 'Raleway', sans-serif;
 }
-#edit .photo{
+
+#edit .photo {
   width: 500px;
   outline: none;
   font-size: 18px;
@@ -787,14 +813,15 @@ ProfileEdit
   background: none;
   border-radius: 2em;
   padding: 10px 10px;
-  margin-top:10px;
-  margin-left:20px;
+  margin-top: 10px;
+  margin-left: 20px;
 
   font-family: 'Raleway', sans-serif;
 }
-#edit .peupdate{
-  text-align:center;
-  margin-top:50px;
+
+#edit .peupdate {
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* list-------------------------------------------------------------------- */
@@ -803,6 +830,7 @@ ProfileEdit
   width: 50%;
   margin: 1em auto 0;
 }
+
 .b-search input[type="text"] {
   width: 100%;
   outline: none;
@@ -814,6 +842,7 @@ ProfileEdit
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
+
 .b-search input[type="submit"] {
   background: url(../images/search-icon.png) no-repeat 14px 14px #1dc8cd;
   border: none;
@@ -828,7 +857,7 @@ ProfileEdit
 }
 
 /* choosecourse------------------------------------------------- */
-.square_btn{
+.square_btn {
   /* display: inline-block; */
   padding: 7px 20px;
   border-radius: 25px;

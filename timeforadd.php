@@ -8,11 +8,7 @@ $user = new User;
 $course = new Course;
 $row = $user->get_user_id($login_id);
 $user_id = $row['user_id'];
-// $row = $course->get_course_id($user_id);
-// $user_course_course_id = $row['course_id'];
 $course_id = $_GET['id'];
-// echo "<h1>".$user_id."   ".$course_id."</h1>";
-
 $row= $user->get_user_course_id($user_id, $course_id);
 $user_course_id = $row['user_course_id'];
 ?>
@@ -69,10 +65,10 @@ $user_course_id = $row['user_course_id'];
       <div class="addform justify-content-center">
         <div class="card-time">
           <form action="" method="post">
-          <div class="card-body">
-            <div class="cp_ipcheck">
-              <ul class="mb-0">
-              <?php
+            <div class="card-body">
+              <div class="cp_ipcheck">
+                <ul class="mb-0">
+                  <?php
                 $days = $_POST['day'];
                  foreach($days as $day_id){
                   echo "<div class='div-time'>";
@@ -87,17 +83,16 @@ $user_course_id = $row['user_course_id'];
                    }
                    echo "</select>";
                    echo "<br>";
-                  //  echo "-----------";
                  }
                  echo "</div>";
                  echo "<button type='submit' name='submit' class='ard-link1 btn'>Save</button>";
 
                  
               ?>
-              </ul>
+                </ul>
+              </div>
+
             </div>
-           
-          </div>
           </form>
         </div>
       </div>
@@ -107,14 +102,9 @@ $user_course_id = $row['user_course_id'];
               
               $schedule = $_POST['schedule'];
               $time = $_POST['time'];
-              // var_dump($days);
               echo "<br>";
-              // var_dump($time);
               $course->time($schedule, $time, $course_id, $user_id); 
-              // $course->add_day($days ,$user_id, $course_id);
-                
               }
-
               ?>
 
     </section><!-- #more-features -->
@@ -123,5 +113,3 @@ $user_course_id = $row['user_course_id'];
 </body>
 
 </html>
-
-<!-- class="card-link1 btn" id="button" -->
